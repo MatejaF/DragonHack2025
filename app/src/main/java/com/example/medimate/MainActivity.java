@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        Button btnNavigate = findViewById(R.id.btnNavigate);
-        btnNavigate.setOnClickListener(new View.OnClickListener() {
+        Button btnGetStarted = findViewById(R.id.btnGetStarted);
+        btnGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Create an Intent to start MainActivity2

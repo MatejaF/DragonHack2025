@@ -7,10 +7,10 @@
     android:paddingTop="?attr/actionBarSize">
 
     <Button
-        android:id="@+id/btnNavigate"
+        android:id="@+id/btnGetStarted"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Go to questionnaire"
+        android:text="Get started"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
