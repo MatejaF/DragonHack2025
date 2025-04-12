@@ -1,6 +1,19 @@
 <resources>
-    <item name="btnRed" type="id"/>
-    <item name="btnGreen" type="id"/>
-    <item name="btnBlue" type="id"/>
-    <item name="questionText" type="id"/>
+    //mainActivity2
+    <item name="questionAge" type="id"/>
+
+    <item name="btn18" type="id"/>
+    <item name="btn19" type="id"/>
+    <item name="btn20" type="id"/>
+
+    <item name="btnContinueQ2" type="id"/>
+
+    //secondQ
+    <item name="questionGender" type="id"/>
+
+    <item name="btnGenM" type="id"/>
+    <item name="btnGenF" type="id"/>
+
+    <item name="btnContinueQ3" type="id"/>
+
 </resources>

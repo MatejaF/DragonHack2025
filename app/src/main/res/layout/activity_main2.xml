@@ -16,19 +16,19 @@
         android:layout_marginBottom="24dp"/>
 
     <Button
-        android:id="@+id/btnRed"
+        android:id="@+id/btn18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="18" />
 
     <Button
-        android:id="@+id/btnGreen"
+        android:id="@+id/btn19"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="19" />
 
     <Button
-        android:id="@+id/btnBlue"
+        android:id="@+id/btn20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="20" />
