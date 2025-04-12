@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/second_q"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/questionWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your weight?"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnWeight50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="50" />
+
+    <Button
+        android:id="@+id/btnWeight70"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="70" />
+
+    <Button
+        android:id="@+id/btnWeight90"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="90" />
+
+    <Button
+        android:id="@+id/btnContinueQ4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="continue" />
+</LinearLayout>
