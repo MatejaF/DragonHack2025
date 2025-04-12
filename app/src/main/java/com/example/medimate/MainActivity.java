@@ -1,5 +1,6 @@
 package com.example.medimate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,13 +36,16 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        Button clicker = (Button) findViewById(R.id.button);
-        clicker.setOnClickListener(new View.OnClickListener() {
+        Button btnNavigate = findViewById(R.id.btnNavigate);
+        btnNavigate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // Create an Intent to start MainActivity2
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
             }
         });
+
     }
 
 }

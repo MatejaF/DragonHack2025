@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="button" type="id">ButtonOpen</item>
+    <item name="btnRed" type="id"/>
+    <item name="btnGreen" type="id"/>
+    <item name="btnBlue" type="id"/>
+    <item name="questionText" type="id"/>
 </resources>
