@@ -1,40 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main2"
+    android:id="@+id/q5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp">
 
     <TextView
-        android:id="@+id/questionText"
+        android:id="@+id/questionBlood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What is your age?"
+        android:text="What is your current sleep level?"
         android:textSize="18sp"
         android:layout_marginBottom="24dp"/>
 
     <Button
-        android:id="@+id/btn18"
+        android:id="@+id/btnBloodOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="18" />
+        android:text="1" />
 
     <Button
-        android:id="@+id/btn19"
+        android:id="@+id/btnBloodTwo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="19" />
+        android:text="2" />
 
     <Button
-        android:id="@+id/btn20"
+        android:id="@+id/btnBloodThree"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="20" />
+        android:text="3" />
 
     <Button
-        android:id="@+id/btnContinueQ2"
+        android:id="@+id/btnBloodFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/btnBloodFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/btnContinueQ6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="continue" />
