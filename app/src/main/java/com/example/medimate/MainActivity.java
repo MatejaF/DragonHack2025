@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.NumberPicker;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -16,6 +18,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.medimate.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+    NumberPicker numberPicker;
 
     private ActivityMainBinding binding;
 
@@ -38,11 +41,17 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnGetStarted = findViewById(R.id.btnGetStarted);
         btnGetStarted.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+
             @Override
             public void onClick(View v) {
                 // Create an Intent to start MainActivity2
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 startActivity(intent);
+
             }
         });
 
