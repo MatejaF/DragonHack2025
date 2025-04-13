@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:background="@drawable/button"
-        android:text="50" />
+        android:text="kg" />
 
     <Button
         android:id="@+id/btnWeight70"
@@ -40,25 +40,18 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:background="@drawable/button"
-        android:text="70" />
+        android:text="lbs" />
+
 
     <Button
-        android:id="@+id/btnWeight90"
-        android:layout_width="250dp"
+        android:id="@+id/btnContinue"
+        android:layout_width="243dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:background="@drawable/button"
-        android:text="90" />
-
-
-        <Button
-            android:id="@+id/btnContinueQ4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/nunito_sans"
-            android:layout_marginTop="16dp"
-            android:layout_marginHorizontal="8dp"
-            android:backgroundTint="#A7D3F3"
-            android:text="Continue"
-            android:textColor="#FFFFFF" />
-    </LinearLayout>
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#A7D3F3"
+        android:fontFamily="@font/nunito_sans"
+        android:text="continue"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
