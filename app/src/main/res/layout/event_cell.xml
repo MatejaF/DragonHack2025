@@ -12,7 +12,6 @@
         android:id="@+id/eventNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Event Name"
         android:textSize="18sp"
         android:textColor="@android:color/black"
         android:layout_marginBottom="5dp"/>
@@ -22,7 +21,6 @@
         android:id="@+id/eventDateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Event Date"
         android:textSize="16sp"
         android:textColor="@android:color/black"
         android:layout_marginBottom="5dp"/>
@@ -32,31 +30,27 @@
         android:id="@+id/eventCellTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Event Time"
         android:textSize="16sp"
         android:textColor="@android:color/black"
         android:layout_marginBottom="10dp"/>
 
     <!-- Edit Button -->
     <Button
-
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Edit"
-        android:backgroundTint="@color/blue"
-        android:textColor="@android:color/white"
         android:layout_marginBottom="5dp"
         android:background="@drawable/button"
         android:textStyle="bold"/>
 
     <!-- Delete Button -->
     <Button
+        android:textColor="@color/white"
         android:id="@+id/deleteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delete"
-        android:backgroundTint="@color/blue"
-        android:textColor="@android:color/white"
         android:background="@drawable/button"
         android:textStyle="bold"/>
 
