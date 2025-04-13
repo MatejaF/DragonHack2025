@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MediMate"
         tools:targetApi="31">
         <activity
+            android:name=".EventEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeekViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".Q3"
             android:exported="false" />
         <activity
