@@ -2,11 +2,10 @@ package com.example.medimate;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -17,9 +16,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class HomeActivity extends AppCompatActivity {
 
-    String[] item = {"You should go get a pregnancy test", "You should go get a mammography"};
-    AutoCompleteTextView autoCompleteTextView;
-    ArrayAdapter<String> adapterItems;
+    String[] item = {
+            "You should go get a pregnancy test",
+            "You should go get a mammography"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,40 +27,32 @@ public class HomeActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
 
-        Button clicker = (Button) findViewById(R.id.button1);
-
-        clicker.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(HomeActivity.this, Calendar.class);
-                startActivity(intent);
-            }
+        // Calendar Button
+        Button clicker = findViewById(R.id.button1);
+        clicker.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, Calendar.class);
+            startActivity(intent);
         });
 
-        autoCompleteTextView = findViewById(R.id.autoCompleteTV);
-        adapterItems = new ArrayAdapter<>(this, R.layout.list_item, item);
-
-
-        autoCompleteTextView.setAdapter(adapterItems);
-
-        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String item = parent.getItemAtPosition(position).toString();
-                Toast.makeText(HomeActivity.this, "Item: " + item, Toast.LENGTH_SHORT).show();
+        // Recommendations Dropdown Button
+        Button dropdownButton = findViewById(R.id.dropdownButton);
+        dropdownButton.setOnClickListener(v -> {
+            PopupMenu popupMenu = new PopupMenu(HomeActivity.this, dropdownButton);
+            for (String option : item) {
+                popupMenu.getMenu().add(option);
             }
+
+            popupMenu.setOnMenuItemClickListener(menuItem -> {
+                String selectedItem = menuItem.getTitle().toString();
+                dropdownButton.setText(selectedItem);
+                Toast.makeText(HomeActivity.this, "Selected: " + selectedItem, Toast.LENGTH_SHORT).show();
+                return true;
+            });
+
+            popupMenu.show();
         });
 
-        Button clicker4 = (Button) findViewById(R.id.button4);
-
-        clicker4.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(HomeActivity.this, Calendar.class);
-                startActivity(intent);
-            }
-        });
+        // Handle insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main2), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
