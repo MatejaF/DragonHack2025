@@ -18,11 +18,12 @@ public class Q4 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_q4);
 
-        Button clicker = (Button) findViewById(R.id.btnContinue);
+        Button clicker = findViewById(R.id.btnContinue); // Updated ID
         clicker.setOnClickListener(v -> {
             Intent intent = new Intent(Q4.this, Q5.class);
             startActivity(intent);
         });
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.q4), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

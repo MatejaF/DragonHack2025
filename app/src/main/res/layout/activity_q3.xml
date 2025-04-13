@@ -5,45 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="24dp">
 
     <TextView
         android:id="@+id/questionWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="what is your weight?"
-        android:textSize="30sp"
-        android:letterSpacing="-0.01"
-        android:textColor="#242E49"
-        android:lineSpacingExtra="-3sp"
+        android:fontFamily="@font/nunito_sans"
         android:gravity="top"
-        android:fontFamily="@font/nunito_sans" />
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="-3sp"
+        android:text="how much do you weight?"
+        android:textColor="#FF000000"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/teza" />
 
     <Button
         android:id="@+id/btnWeight50"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         android:background="@drawable/button"
         android:text="50" />
 
     <Button
         android:id="@+id/btnWeight70"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         android:background="@drawable/button"
         android:text="70" />
 
     <Button
         android:id="@+id/btnWeight90"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         android:background="@drawable/button"
         android:text="90" />
 
-    <Button
-        android:id="@+id/btnContinueQ4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="continue" />
-</LinearLayout>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="8dp"
+            android:backgroundTint="#A7D3F3"
+            android:text="Continue"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>

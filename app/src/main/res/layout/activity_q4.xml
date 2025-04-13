@@ -9,6 +9,8 @@
     android:gravity="center"
     android:padding="24dp"
     tools:ignore="ExtraText">
+
+
     <TextView
         android:id="@+id/questionBlood"
         android:layout_width="wrap_content"
@@ -102,4 +104,3 @@
         android:textColor="#FFFFFF" />
 
 </LinearLayout>
-
