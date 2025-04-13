@@ -19,11 +19,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="+"
-            android:textColor="@color/blue"
-            android:background="@drawable/button"
+            android:text="&lt;-"
             android:textStyle="bold"
-            android:onClick="previousWeekAction"
+            android:onClick="nextWeekAction"
             android:textSize="20sp"/>
 
         <TextView
@@ -40,9 +38,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="->"
-            android:textColor="@color/blue"
-            android:background="@color/white"
+            android:text="-&gt;"
             android:textStyle="bold"
             android:onClick="nextWeekAction"
             android:textSize="20sp"/>
@@ -123,8 +119,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New event"
-        android:textColor="@color/blue"
-        android:background="@color/white"
         android:textStyle="bold"
         android:onClick="newEventAction"
         android:layout_gravity="center"
