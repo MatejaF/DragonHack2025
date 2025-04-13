@@ -8,34 +8,36 @@
     android:paddingTop="?attr/actionBarSize">
 
     <!-- Button is now correctly placed inside the layout -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="24dp"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
 
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
     <ImageView
         android:id="@+id/lifesavers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        android:layout_marginRight="24dp"
         android:clickable="true"
         android:scaleType="fitCenter"
         android:src="@drawable/lifesavers"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintVertical_bias="0.578"
+        />
 
-    <TextView
-        android:id="@+id/appTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="MediMate"
-        android:textColor="#F68631"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="103dp" />
+
 
     <Button
         android:id="@+id/btnGetStarted"
@@ -48,7 +50,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.834"
         tools:layout_editor_absoluteX="16dp" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

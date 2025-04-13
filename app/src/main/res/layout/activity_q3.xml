@@ -44,7 +44,7 @@
 
 
     <Button
-        android:id="@+id/btnContinue"
+        android:id="@+id/btnContinueQ4"
         android:layout_width="243dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

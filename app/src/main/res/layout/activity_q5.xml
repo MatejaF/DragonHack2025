@@ -10,15 +10,15 @@
 
     <TextView
         android:id="@+id/questionBlood"
+        style="@style/Widget.questionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:fontFamily="@font/nunito_sans"
         android:text="What is your current sleep level?"
         android:textSize="25sp" />
 
     <Button
         android:id="@+id/btnBloodOne"
+        style="@style/Widget.AppButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
@@ -26,13 +26,16 @@
 
     <Button
         android:id="@+id/btnBloodTwo"
+        style="@style/Widget.AppButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
+        android:layout_marginBottom="0dp"
         android:text="2" />
 
     <Button
         android:id="@+id/btnBloodThree"
+        style="@style/Widget.AppButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
@@ -40,6 +43,7 @@
 
     <Button
         android:id="@+id/btnBloodFour"
+        style="@style/Widget.AppButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
@@ -47,6 +51,7 @@
 
     <Button
         android:id="@+id/btnBloodFive"
+        style="@style/Widget.AppButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
@@ -54,14 +59,17 @@
 
     <Button
         android:id="@+id/btnContinueQ6"
+        style="@style/Widget.AppButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
         android:text="continue" />
 
     <ImageView
-        android:layout_width="314dp"
-        android:layout_height="373dp"
-        android:src="@drawable/spanje" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/spanje"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter" />
 
 </LinearLayout>
