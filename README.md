@@ -1,8 +1,6 @@
 ﻿# DragonHack2025
 Powerpuff Girls' hack idea for Dragon Hack 2025
 
-Healthcare Mobile App, where you can track your doctor's appointments, input yours and your
-family's medical history, it will remind you based off of your age and gender, when you are
+Healthcare Mobile App, where you can track your doctor's appointments and their contacts, it will remind you based off of your age and gender, when you are
 recommended to go to specific checkups.
-The plan is to have a calendar, contact information, AI chat bot (?), in the future we wish to
-connect it with digital medical files of the individual end user.
+In the future we wish to connect it with digital medical files of the individual end user.
