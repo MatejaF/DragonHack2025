@@ -11,9 +11,13 @@
         android:id="@+id/questionBlood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What is your blood type?"
-        android:textSize="18sp"
-        android:layout_marginBottom="24dp"/>
+        android:fontFamily="@font/nunito_sans"
+        android:gravity="top"
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="-3sp"
+        android:text="what is your blood type?"
+        android:textColor="#242E49"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnBloodA"
