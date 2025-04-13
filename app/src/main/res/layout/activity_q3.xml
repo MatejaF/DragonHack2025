@@ -11,9 +11,13 @@
         android:id="@+id/questionWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What is your weight?"
-        android:textSize="18sp"
-        android:layout_marginBottom="24dp"/>
+        android:text="what is your weight?"
+        android:textSize="30sp"
+        android:letterSpacing="-0.01"
+        android:textColor="#242E49"
+        android:lineSpacingExtra="-3sp"
+        android:gravity="top"
+        android:fontFamily="@font/nunito_sans" />
 
     <Button
         android:id="@+id/btnWeight50"
