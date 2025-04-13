@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/q4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp">
-
+    android:gravity="center"
+    android:padding="24dp"
+    tools:ignore="ExtraText">
     <TextView
         android:id="@+id/questionBlood"
         android:layout_width="wrap_content"
@@ -19,24 +21,85 @@
         android:textColor="#242E49"
         android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/btnBloodA"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="A" />
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnBloodA"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/btnBloodB"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/btnBloodAB"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button"
+            android:text="AB" />
+
+        <Button
+            android:id="@+id/btnBloodO"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button"
+            android:text="O" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="205dp"
+        android:layout_height="188dp"
+        android:layout_gravity="center"
+        android:src="@drawable/blood" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button"
+            android:text="+" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button"
+            android:text="−" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/btnBloodB"
+        android:id="@+id/btnContinue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="B" />
+        android:fontFamily="@font/nunito_sans"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="8dp"
+        android:backgroundTint="#A7D3F3"
+        android:text="Continue"
+        android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/btnContinueQ5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="continue" />
 </LinearLayout>
+

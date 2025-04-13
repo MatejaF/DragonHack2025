@@ -18,7 +18,7 @@ public class Q4 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_q4);
 
-        Button clicker = (Button) findViewById(R.id.btnContinueQ5);
+        Button clicker = (Button) findViewById(R.id.btnContinue);
         clicker.setOnClickListener(v -> {
             Intent intent = new Intent(Q4.this, Q5.class);
             startActivity(intent);
