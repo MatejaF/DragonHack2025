@@ -20,7 +20,7 @@ public class Q5 extends AppCompatActivity {
 
         Button clicker = (Button) findViewById(R.id.btnContinueQ6);
         clicker.setOnClickListener(v -> {
-            Intent intent = new Intent(Q5.this, Calendar.class);
+            Intent intent = new Intent(Q5.this, HomeActivity.class);
             startActivity(intent);
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.q5), (v, insets) -> {

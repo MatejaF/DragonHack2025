@@ -14,4 +14,22 @@
         <!-- Customize your theme here. -->
         <item name="android:windowBackground">@color/backgroundblue</item>
     </style>
+    <!-- res/values/styles.xml -->
+        <style name="Widget.AppButton" parent="Widget.AppCompat.Button">
+            <item name="android:background">@drawable/button</item>
+            <item name="android:layout_width">20dp</item>
+            <item name="android:layout_height">80dp</item>
+            <item name="android:layout_marginBottom">5dp</item>
+            <item name="android:layout_marginTop">5dp</item>
+            <item name="android:layout_marginLeft">15dp</item>
+            <item name="android:layout_marginRight">15dp</item>
+            <item name="android:gravity">center</item>
+
+        </style>
+
+        <style name="Widget.questionText" parent="Widget.AppCompat.TextView">
+            <item name="android:layout_margin">50dp</item>
+            <item name="android:gravity">center</item>
+
+        </style>
 </resources>

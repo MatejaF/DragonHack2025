@@ -8,6 +8,7 @@
     android:padding="24dp">
 
     <TextView
+        style="@style/Widget.questionText"
         android:id="@+id/questionText"
         android:layout_width="343dp"
         android:layout_height="38dp"
@@ -22,6 +23,7 @@
 
     <Button
         android:id="@+id/btn18"
+        style="@style/Widget.AppButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
@@ -29,6 +31,7 @@
 
     <Button
         android:id="@+id/btn19"
+        style="@style/Widget.AppButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
@@ -36,6 +39,7 @@
 
     <Button
         android:id="@+id/btn20"
+        style="@style/Widget.AppButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
@@ -43,6 +47,7 @@
 
     <Button
         android:id="@+id/btnContinueQ2"
+        style="@style/Widget.AppButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
