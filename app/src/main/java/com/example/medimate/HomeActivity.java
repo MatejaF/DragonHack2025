@@ -2,6 +2,7 @@ package com.example.medimate;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -10,20 +11,24 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Q5 extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_q5);
+        setContentView(R.layout.activity_home);
 
-        Button clicker = (Button) findViewById(R.id.btnContinueQ6);
-        clicker.setOnClickListener(v -> {
-            Intent intent = new Intent(Q5.this, Calendar.class);
-            startActivity(intent);
+        Button clicker = (Button) findViewById(R.id.button1);
+
+        clicker.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(HomeActivity.this, Calendar.class);
+                startActivity(intent);
+            }
         });
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.q5), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main2), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
