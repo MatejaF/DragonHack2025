@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".EventEditActivity">
-    
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
         android:textSize="20sp"
         android:textAlignment="center"
         android:textColor="@color/black"/>
-    
+
     <EditText
         android:id="@+id/eventNameET"
         android:layout_width="wrap_content"
@@ -36,7 +36,8 @@
         android:text="Date:"
         android:textSize="20sp"
         android:textAlignment="center"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:onClick="openDatePicker"/>
 
     <TextView
         android:id="@+id/eventTimeTV"
@@ -47,7 +48,8 @@
         android:text="Time:"
         android:textSize="20sp"
         android:textAlignment="center"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:onClick="openTimePicker"/>
 
     <Button
         android:layout_marginTop="20dp"
