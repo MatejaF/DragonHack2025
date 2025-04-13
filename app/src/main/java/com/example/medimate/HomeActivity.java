@@ -1,21 +1,37 @@
 package com.example.medimate;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.medimate.databinding.ActivityHomepageBinding;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 public class HomeActivity extends AppCompatActivity {
-    private ActivityHomepageBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityHomepageBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_home);
 
-        binding.button1.setOnClickListener(v -> {});
-        binding.button2.setOnClickListener(v -> {});
-        binding.button3.setOnClickListener(v -> {});
-        binding.button4.setOnClickListener(v -> {});
+        Button clicker = (Button) findViewById(R.id.button1);
+
+        clicker.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(HomeActivity.this, Calendar.class);
+                startActivity(intent);
+            }
+        });
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main2), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
     }
 }
