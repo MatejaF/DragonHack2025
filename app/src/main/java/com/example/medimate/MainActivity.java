@@ -41,10 +41,6 @@ public class MainActivity extends AppCompatActivity {
         Button btnGetStarted = findViewById(R.id.btnGetStarted);
         btnGetStarted.setOnClickListener(new View.OnClickListener() {
 
-
-
-
-
             @Override
             public void onClick(View v) {
                 // Create an Intent to start MainActivity2
