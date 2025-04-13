@@ -5,4 +5,4 @@ Healthcare Mobile App, where you can track your doctor's appointments and their 
 recommended to go to specific checkups.
 In the future we wish to connect it with digital medical files of the individual end user.
 
-You can see the figma prototype in the 2nd branch.
+You can see the figma prototype as well.
