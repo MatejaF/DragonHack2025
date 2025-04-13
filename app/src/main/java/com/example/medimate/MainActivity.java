@@ -18,7 +18,6 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.medimate.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    NumberPicker numberPicker;
 
     private ActivityMainBinding binding;
 
@@ -41,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnGetStarted = findViewById(R.id.btnGetStarted);
         btnGetStarted.setOnClickListener(new View.OnClickListener() {
+
+
+
 
 
             @Override

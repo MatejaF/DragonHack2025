@@ -20,13 +20,6 @@
         android:fontFamily="@font/nunito_sans"/>
 
 
-    <NumberPicker
-        android:id="@+id/numberPicker"
-        android:layout_width="182dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="32dp" />
-
     <Button
         android:id="@+id/btn18"
         android:layout_width="match_parent"
