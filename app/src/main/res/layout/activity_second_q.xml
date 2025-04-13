@@ -43,17 +43,20 @@
         android:id="@+id/btnGenM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="m" />
 
     <Button
         android:id="@+id/btnGenF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="f" />
 
     <Button
         android:id="@+id/btnContinueQ3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="continue" />
 </LinearLayout>

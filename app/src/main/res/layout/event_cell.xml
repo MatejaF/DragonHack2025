@@ -46,6 +46,7 @@
         android:backgroundTint="@color/blue"
         android:textColor="@android:color/white"
         android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
         android:textStyle="bold"/>
 
     <!-- Delete Button -->
@@ -56,6 +57,7 @@
         android:text="Delete"
         android:backgroundTint="@color/blue"
         android:textColor="@android:color/white"
+        android:background="@drawable/button"
         android:textStyle="bold"/>
 
 </LinearLayout>

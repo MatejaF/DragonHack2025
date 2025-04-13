@@ -21,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="calendar"
+        android:background="@drawable/button"
         android:drawableLeft="@android:drawable/ic_menu_my_calendar"
         android:layout_marginBottom="16dp"/>
 
@@ -29,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="contacts"
+        android:background="@drawable/button"
         android:drawableLeft="@android:drawable/ic_menu_call"
         android:layout_marginBottom="16dp"/>
 
@@ -37,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="family medical history"
+        android:background="@drawable/button"
         android:drawableLeft="@android:drawable/ic_menu_info_details"
         android:layout_marginBottom="16dp"/>
 
@@ -44,6 +47,7 @@
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="recomendations"
         android:drawableLeft="@android:drawable/ic_menu_preferences"/>
 

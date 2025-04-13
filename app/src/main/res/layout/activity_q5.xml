@@ -19,35 +19,41 @@
         android:id="@+id/btnBloodOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="1" />
 
     <Button
         android:id="@+id/btnBloodTwo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="2" />
 
     <Button
         android:id="@+id/btnBloodThree"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="3" />
 
     <Button
         android:id="@+id/btnBloodFour"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="4" />
 
     <Button
         android:id="@+id/btnBloodFive"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="5" />
 
     <Button
         android:id="@+id/btnContinueQ6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="continueQ6" />
 </LinearLayout>
