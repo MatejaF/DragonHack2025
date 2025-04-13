@@ -30,7 +30,13 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         setContentView(R.layout.activity_week_view);
         initWidgets();
         setWeekView();
+
+        // 👇 Check for intent flag to open new event editor
+        if (getIntent().getBooleanExtra("openNewEvent", false)) {
+            newEventAction(null);
+        }
     }
+
 
     private void initWidgets()
     {

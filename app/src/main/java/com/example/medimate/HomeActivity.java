@@ -2,10 +2,9 @@ package com.example.medimate;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.PopupMenu;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -34,25 +33,44 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Recommendations Dropdown Button
+        // Dropdown Toggle
         Button dropdownButton = findViewById(R.id.dropdownButton);
+        LinearLayout dropdownLayout = findViewById(R.id.dropdownLayout);
+        dropdownLayout.setVisibility(View.GONE); // hidden by default
+
         dropdownButton.setOnClickListener(v -> {
-            PopupMenu popupMenu = new PopupMenu(HomeActivity.this, dropdownButton);
-            for (String option : item) {
-                popupMenu.getMenu().add(option);
+            if (dropdownLayout.getVisibility() == View.GONE) {
+                dropdownLayout.setVisibility(View.VISIBLE);
+            } else {
+                dropdownLayout.setVisibility(View.GONE);
             }
-
-            popupMenu.setOnMenuItemClickListener(menuItem -> {
-                String selectedItem = menuItem.getTitle().toString();
-                dropdownButton.setText(selectedItem);
-                Toast.makeText(HomeActivity.this, "Selected: " + selectedItem, Toast.LENGTH_SHORT).show();
-                return true;
-            });
-
-            popupMenu.show();
         });
 
-        // Handle insets
+        // Populate dropdown items
+        LinearLayout recommendationContainer = findViewById(R.id.recommendationContainer);
+        recommendationContainer.removeAllViews();
+
+        for (String option : item) {
+            Button recBtn = new Button(this);
+            recBtn.setText(option);
+            recBtn.setBackgroundResource(R.drawable.button);
+            recBtn.setOnClickListener(view -> {
+                dropdownButton.setText(option);
+                Toast.makeText(this, "Selected: " + option, Toast.LENGTH_SHORT).show();
+                dropdownLayout.setVisibility(View.GONE);
+            });
+            recommendationContainer.addView(recBtn);
+        }
+
+        // ✅ Fix: bind the newEventBtn before setting listener
+        Button newEventBtn = findViewById(R.id.newEventButton);
+        newEventBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, WeekViewActivity.class);
+            intent.putExtra("openNewEvent", true); // pass flag
+            startActivity(intent);
+        });
+
+        // Insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main2), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

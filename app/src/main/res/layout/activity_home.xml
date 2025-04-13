@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
+
     <LinearLayout
         android:id="@+id/main2"
         android:layout_width="match_parent"
@@ -54,9 +55,35 @@
             android:layout_height="wrap_content"
             android:text="Recommendations"
             android:background="@drawable/button"
-            android:drawableLeft="@android:drawable/ic_menu_preferences"/>
+            android:drawableLeft="@android:drawable/ic_menu_preferences"
+            android:layout_marginBottom="8dp"/>
 
+        <!-- Dropdown Layout (initially hidden) -->
+        <LinearLayout
+            android:id="@+id/dropdownLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="#E1F5FE">
 
+            <LinearLayout
+                android:id="@+id/recommendationContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/newEventButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Event"
+                android:background="@drawable/button"
+                android:drawableLeft="@android:drawable/ic_input_add"/>
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
