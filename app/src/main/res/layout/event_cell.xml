@@ -2,16 +2,60 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="60dp">
-    
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="10dp">
+
+    <!-- Event Name -->
     <TextView
+        android:id="@+id/eventNameText"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- Event Date -->
+    <TextView
+        android:id="@+id/eventDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Date"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- Event Time -->
+    <TextView
         android:id="@+id/eventCellTV"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:text="Event"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Time"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Edit Button -->
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:backgroundTint="@color/blue"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"/>
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:backgroundTint="@color/blue"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
 
 </LinearLayout>
