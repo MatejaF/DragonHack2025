@@ -22,17 +22,29 @@
         app:layout_constraintVertical_bias="0.578"
         tools:layout_editor_absoluteX="50dp" />
 
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="MediMate"
+        android:textColor="#F68631"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="103dp" />
+
     <Button
         android:id="@+id/btnGetStarted"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="Get started"
         android:textColor="#FFFFFF"
-        android:background="@drawable/button"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834"
+        tools:layout_editor_absoluteX="16dp" />
 
     <fragment
         android:id="@+id/nav_host_fragment_activity_main"
